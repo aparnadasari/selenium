@@ -1,5 +1,5 @@
 
-public class Class15HomeWork {
+public class Class15Homework {
 public static void main(String[] args) {
 	
 }
