@@ -1,10 +1,15 @@
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class MyTest {
 	public static void main(String[] args) {
 		FirefoxDriver driver = new FirefoxDriver();
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 		driver.get("https://www.flipkart.com");
 		driver.manage().window().maximize();
 		driver.findElement(

@@ -1,9 +1,14 @@
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class FlipkartTest {
 	public static void main(String[] args) {
 		FirefoxDriver driver = new FirefoxDriver();
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 		driver.get("https://www.flipkart.com");
 		driver.findElement(By.xpath("//a[@href='/account/login?ret=/']")).click();
 		driver.findElement(By.xpath("//input[@class='_2zrpKAtqH0O2AkjJPXnqu9']"))

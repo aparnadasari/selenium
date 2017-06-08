@@ -12,7 +12,10 @@ public class BankAccount {
 		this.balance = balance;
 
 	}
-
+/**
+ * this method is used to draw the money
+ * @param amount amount that should be withdraw
+ */
 	public void withdraw(double amount) {
 		if(balance - amount >= 0) {
 		balance = balance - amount;
@@ -20,12 +23,18 @@ public class BankAccount {
 			System.out.println("you didn't have sufficient balance");
 		}
 	}
-
+/**
+ * we can deposit in this method
+ * @param amount we should deposit amount 
+ */
 	public void deposit(double amount) {
 		balance = balance + amount;
 
 	}
-
+/**
+ * we can check the bal in this method
+ * @returns balance amount
+ */
 	public double getBalance() {
 		return balance;
 	}
