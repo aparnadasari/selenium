@@ -1,9 +1,14 @@
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class XpathBank {
 	public static void main(String[] args) {
 		FirefoxDriver driver = new FirefoxDriver();
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 		driver.get("http://demo.guru99.com/v4/");
 		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("mngr79115");
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("jUzamus");
