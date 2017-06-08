@@ -1,4 +1,4 @@
 
-public class Practicecode {
+public class PracticeCode {
 
 }
