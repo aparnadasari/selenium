@@ -8,6 +8,7 @@ double x = a.getBalance();
 a.withdraw(500);
 x = a.getBalance();
 System.out.println(x);
+WebDriver wd=new FirefoxDriver();
 
 }
 }

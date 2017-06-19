@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="Guru99Bank">
+        <methods>
+          <include name="testCustomerName"/>
+          <include name="testCustomerPin"/>
+          <include name="testCustomerState"/>
+          <include name="testCustomerMobileNo"/>
+          <include name="testCustomerEmailId"/>
+          <include name="testCustomerCity"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Guru99Bank -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
